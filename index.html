@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Landing Page</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/bootstrap.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Weather Visualizations!!!</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Comparison.html">Comparisons</a>
+          </li>
+          <li class="nav-item">
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Plots</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="Temperature.html">Temperature</a>
+              <a class="dropdown-item" href="Humidity.html">Humidity</a>
+              <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="Wind_Speed.html">Wind Speed</a>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3"><Strong>WEATHER!!!</Strong></h1>
+          <h4 class="display-4">Summary: Lattitude vs. 'x'</h4>
+          <p></p>
+          <p>
+          <h4 Class="display-5">Everyone knows that as you travel closer to the equator the temperature gets hotter.
+          </h4>
+          </p>
+          <p>
+          <h4>This project was used to prove it!</h4>
+          </p>
+          <p>A python script was created to visualize the weather of 500 cities across the
+            world with varying distances
+            from the equator.
+            Data from OpenWeatherMap API was also used to popluate factors such as: temperature, humididty, cloudiness
+            and wind speed.
+          </p>
+          <p>Once all of the data was assembled. MatplotLib was used to plot different aspects of the weather in
+            relation to latitude. This
+            site provides the visualizations from this dataset that were created as part of the analysis. It aslo
+            provides explanations of any
+            trends and/or correlations that were found.
+          </p>
+          <p>Scatter plots are used to interpret trends by examining the relationships between the two variables
+            X(latitude) and Y
+            (Temperature, Humidity, Cloudiness and Wind Speed). Analyze the scatter plot and determine if there are any
+            distinct
+            patterns: positive relationship, negative relationship and no relationship. However, just because the graph
+            shows
+            correlation does not always mean there is a relationship. Correlation does not equal causation. </p>
+          <p>To determine if there is a correlation between the two variables the r-value must be looked at and
+            evaluated. The
+            r-value is always between 1 and -1. If the r-value is exactly 1 then there is a perfect correlation between
+            the two
+            variables. As the number approaches 0 so does the likelihood of cause and effect.</p>
+          <p>Regression analysis is the standardized way of finding correlation between data sets and it also gives a
+            predictive
+            model.</p>
+          </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-6">
+            <h3>
+              <center>Temperature</center>
+            </h3>
+            <center><img src="Images/Temperature.png" alt "Temperature"></center>
+            <p>
+              <center><a class="btn btn-secondary" href="Temperature.html" role="button">View details &raquo;</a>
+              </center>
+            </p>
+
+          </div>
+          <div class="col-md-6">
+            <h3>
+              <center>Humidity</center>
+            </h3>
+            <center><img src="Images/Humidity.png" alt"Humidity"></center>
+            <p>
+              <center><a class="btn btn-secondary" href="Humidity.html" role="button">View details &raquo;</a></center>
+            </p>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>
+              <center>Cloudiness</center>
+            </h3>
+            <center><img src="Images/Cloudiness.png" alt "Cloudiness"></center>
+            <p>
+              <center><a class="btn btn-secondary" href="Cloudiness.html" role="button">View details &raquo;</a>
+              </center>
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h3>
+              <center>Wind Speed</center>
+            </h3>
+            <center><img src="Images/WindSpeed.png" alt "WindSpeed"></center>
+            <p>
+              <center><a class="btn btn-secondary" href="Wind_Speed.html" role="button">View details &raquo;</a>
+              </center>
+            </p>
+          </div>
+        </div>
+
+        <hr>
+
+      </div> <!-- /container -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+  </Body>
+  </main>
+
+  <footer class="container">
+    <p>&copy; Company 2017-2020</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+  <script src="../assets/dist/js/bootstrap.bundle.js"></script>
+  </body>
+
+</html>
